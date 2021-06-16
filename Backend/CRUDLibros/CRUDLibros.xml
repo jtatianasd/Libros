@@ -4,5 +4,124 @@
         <name>CRUDLibros</name>
     </assembly>
     <members>
+        <member name="M:CRUDLibros.Controllers.AutoresController.GetAutores">
+            <summary>
+            Obtener todos los autores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.AutoresController.GetAutor(System.Int32)">
+             <summary>
+            Obtener un autor individual
+             </summary>
+             <param name="autorId"> </param>
+             <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.AutoresController.CrearAutor(CRUDLibros.Models.DTO.AutorDTO)">
+            <summary>
+            Crear un nuevo autor
+            </summary>
+            <param name="autorDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.AutoresController.ActualizarAutor(System.Int32,CRUDLibros.Models.DTO.AutorDTO)">
+            <summary>
+            Actualizar un autor existente
+            </summary>
+            <param name="autorId"></param>
+            <param name="autorDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.AutoresController.BorrarAutor(System.Int32)">
+            <summary>
+            Borrar un autor existente
+            </summary>
+            <param name="autorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.EditorialesController.GetEditoriales">
+            <summary>
+            Obtener todas las editoriales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.EditorialesController.GetEditorial(System.Int32)">
+             <summary>
+            Obtener una editorial individual
+             </summary>
+             <param name="editorialId"> </param>
+             <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.EditorialesController.CrearLibro(CRUDLibros.Models.DTO.EditorialDTO)">
+            <summary>
+            Crear una nueva editorial
+            </summary>
+            <param name="editorialDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.EditorialesController.ActualizarEditorial(System.Int32,CRUDLibros.Models.DTO.EditorialDTO)">
+            <summary>
+            Actualizar una editorial existente
+            </summary>
+            <param name="editorialId"></param>
+            <param name="editorialDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.EditorialesController.BorrarEditorial(System.Int32)">
+            <summary>
+            Borrar una editorial existente
+            </summary>
+            <param name="editorialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.GetLibros">
+            <summary>
+            Obtener todos los libros
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.GetLibro(System.Int32)">
+             <summary>
+            Obtener un libro individual
+             </summary>
+             <param name="libroId"> </param>
+             <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.GetLibrosEnAutor(System.Int32)">
+            <summary>
+            Obtener libros por autor
+            </summary>
+            <param name="autorId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.GetLibrosEnEditorial(System.Int32)">
+            <summary>
+            Obtener libros por editorial
+            </summary>
+            <param name="editorialId"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.CrearLibro(CRUDLibros.Models.DTO.LibroDTO)">
+            <summary>
+            Crear un nuevo libro
+            </summary>
+            <param name="libroDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.ActualizarLibro(System.Int32,CRUDLibros.Models.DTO.LibroDTO)">
+            <summary>
+            Actualizar un libro existente
+            </summary>
+            <param name="libroId"></param>
+            <param name="libroDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CRUDLibros.Controllers.LibrosController.BorrarLibro(System.Int32)">
+            <summary>
+            Borrar un libro existente
+            </summary>
+            <param name="libroId"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

@@ -1,5 +1,8 @@
 using CRUDLibros.Data;
 using CRUDLibros.Helpers;
+using CRUDLibros.Mappers;
+using CRUDLibros.Repository;
+using CRUDLibros.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -28,12 +31,16 @@ namespace CRUDLibros
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conexion")));
+			services.AddScoped<ILibroRepository, LibroRepository>();
+			services.AddScoped<IAutorRepository, AutorRepository>();
+			services.AddScoped<IEditorialRepository, EditorialRepository>();
 			services.AddControllers();
-
+			//Mapper
+			services.AddAutoMapper(typeof(LibrosMapper));
 			// Documentacion Swagger
 			services.AddSwaggerGen(options =>
 			{
-				options.SwaggerDoc("ApiLibros", new Microsoft.OpenApi.Models.OpenApiInfo()
+				options.SwaggerDoc("CRUDLibros", new Microsoft.OpenApi.Models.OpenApiInfo()
 				{
 					Title = "API Libros",
 					Version = "1",
